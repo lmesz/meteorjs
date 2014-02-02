@@ -1,0 +1,45 @@
+<head>
+	<title>MongoReader</title>
+</head>
+
+<body>
+	{{> header}}
+	{{> search}}
+</body>
+
+<template name="header">
+	<div class="navbar navbar-static-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand" href="/">MongoReader</a>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="search">
+	<div id="main">
+		<table class="table table-hover table-bordered">
+			<thead>
+				<tr>
+					<td>#</td>
+					<td>Date</td>
+					<td>Host</td>
+					<td>Program</td>
+					<td>Message</td>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each items}}
+				<tr>
+					<td></td>
+					<td>{{date}}</td>
+					<td>{{host}}</td>
+					<td>{{program}}</td>
+					<td>{{message}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>

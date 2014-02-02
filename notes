@@ -1,0 +1,3 @@
+ * Its fun I am a bit curious what can I do with that :)
+ * It reads from db meteor collection syslogng which follows the that template "date, host, program, message"
+ * Curious about its performance and ability
