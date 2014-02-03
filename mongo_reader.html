@@ -19,24 +19,62 @@
 
 <template name="search">
 	<div id="main">
-		<table class="table table-hover table-bordered">
+		<table class="table table-hover table-striped">
 			<thead>
 				<tr>
-					<td>#</td>
-					<td>Date</td>
-					<td>Host</td>
-					<td>Program</td>
-					<td>Message</td>
+					<td>
+					<p class="text-center">
+						<strong>Facility</strong>
+					</p></td>
+					<td>
+					<p class="text-center">
+						<strong>Priority</strong>
+					</p></td>
+					<td>
+					<p class="text-center">
+						<strong>Date</strong>
+					</p></td>
+					<td>
+					<p class="text-center">
+						<strong>Host</strong>
+					</p></td>
+					<td>
+					<p class="text-center">
+						<strong>Program</strong>
+					</p></td>
+					<td>
+					<p class="text-center">
+						<strong>Message</strong>
+					</p></td>
 				</tr>
 			</thead>
 			<tbody>
 				{{#each items}}
-				<tr>
-					<td></td>
-					<td>{{date}}</td>
-					<td>{{host}}</td>
-					<td>{{program}}</td>
-					<td>{{message}}</td>
+				<tr class="success">
+					<td>
+					<p class="text-center">
+						{{FACILITY}}
+					</p></td>
+					<td>
+					<p class="text-center">
+						{{PRIORITY}}
+					</p></td>
+					<td>
+					<p class="text-center">
+						{{DATE}}
+					</p></td>
+					<td>
+					<p class="text-center">
+						{{HOST}}
+					</p></td>
+					<td>
+					<p class="text-center">
+						{{PROGRAM}}
+					</p></td>
+					<td>
+					<p class="text-center">
+						{{MESSAGE}}
+					</p></td>
 				</tr>
 				{{/each}}
 			</tbody>
