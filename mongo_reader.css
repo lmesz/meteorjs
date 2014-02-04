@@ -1,7 +1,10 @@
 /* CSS declarations go here */
 
+body {
+    background-color: #CCC;
+}
+
 #main {
     padding-top:20px;
     height: 500px;
-    overflow-y: auto;
 }
